@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+</head>
+<body>
+   
+
+ 
+   
+    <form id="formulario">
+        
+        <legend><b>CADASTRO DE CLIENTES</b></legend>
+        <input id="id" class="request" type="hidden" name="id">
+        
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="nome" type="text" placeholder="Nome">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="data_nascimento" name="data_nascimento" type="date">
+                  
+                </div>
+              </div>
+          </div>
+
+
+          <div id="selectform">
+        <select id="sexo" name="sexo" required >
+            <option value="null" disabled selected>Selecione o Sexo</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            </select>
+            
+          </div>
+
+
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="nome_mae" name="nome_mae" type="text" placeholder="Nome da Mãe">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" name="email" type="text" placeholder="Email">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="cpf" name="cpf" type="text" placeholder="CPF">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="cep" name="cep" type="text" placeholder="CEP">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="nome_rua" name="nome_rua" type="text" placeholder="Nome da Rua">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="numero_casa" name="numero_casa" type="text" placeholder="Numero da Casa">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="bairro" name="bairro" type="text" placeholder="Bairro">
+                  
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="uf" name="uf" type="text" placeholder="UF">
+                  
+                </div>
+              </div>
+          </div>
+        
+
+
+
+       
+        
+        <!-- <div id="divbotao"> -->
+        
+        <button id="botaocadastrar" class="waves-effect waves-light btn-large blue" type="button" style="border-radius: 5px; margin-left: 10px;" >CADASTRAR <i class="material-icons right">send</i></button>
+        <button id="botaoeditar" type="button" class="waves-effect waves-light btn-large blue" style="border-radius: 5px; margin-left: 10px; ">EDITAR  <i class="material-icons right">send</i></button>
+    
+        <!-- </div> -->
+
+
+    </form>
+ 
+            <table id="fill_list" class="display">
+                <thead>
+                <tr>
+                   
+                    <td style="font-weight: bold;">NOME</td>
+                    <td style="font-weight: bold;"id="datanasc">DATA DE NASCIMENTO</td>
+                    <td style="font-weight: bold;">SEXO</td>
+                    <td style="font-weight: bold;">NOME DA MAE</td>
+                    <td style="font-weight: bold;">EMAIL</td>
+                    <td style="font-weight: bold;">CPF</td>
+                    <td style="font-weight: bold;">CEP</td>
+                    <td style="font-weight: bold;">EDITAR</td>
+
+                </tr>
+            </thead>
+
+
+            </table>
+             
+           
+            
+    
+    
+           
+
+     
+     
+    <script src="./script.js"> </script>
+   
+     <script src="./jquery-3.7.0.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        M.FormSelect.init(elems)
+        });
+    </script>
+    
+    
+    
+    <script src="./jquery-3.7.0.js"> </script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"> </script>
+<script>
+    $(document).ready( function () {
+        $('#fill_list').DataTable();
+        } );
+    </script>
+</body>
+</html>

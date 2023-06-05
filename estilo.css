@@ -1,0 +1,283 @@
+*{
+
+	padding: 0px;
+	margin: 0px;
+	font-family: arial;
+}
+
+
+
+body{
+
+	background-color: #8BC6EC;
+	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	width: 100%;
+	
+
+
+
+	
+}
+
+
+
+
+
+	
+
+	table{
+
+		background-color: rgba( 0, 0, 0, 0.4);
+		width: 90%;
+		text-align: center;
+		border-radius: 4PX;
+        text-transform: uppercase;
+		color: rgb(0, 0, 0);
+		margin: auto;
+		margin-top: 20px;
+
+		
+	}
+
+	tr{
+
+        
+		line-height: 25px;
+		min-height: none;
+		min-width: none;
+		color: rgb(0, 0, 0);
+		text-align: center;
+		
+		
+	}
+
+	
+
+
+
+
+	td{
+    border: 2px dodgerblue solid;
+	padding: 5px 5px;
+    text-align: center;
+    
+
+    
+
+	}
+
+ 
+
+
+
+
+    button{
+		margin-top: 20px;
+		padding: 8px;
+        margin-bottom: 20px;
+        color: white;
+		border: 1px black solid;
+		background-color: dodgerblue;
+		border-radius: 4px;
+		cursor: pointer;
+		border: solid black 1px;
+		
+
+    }
+
+	
+	
+	#cadastro{
+		margin-top: 3%;
+		margin-left: 35%;
+		width: 25%;
+		
+		 
+		
+
+	}
+
+
+	 
+	#formulario{
+	
+	background-color: rgba(176,196,222);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgba( 0, 0, 0, 0.5);
+	color: white;
+	width: 30%;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	}
+
+	legend{
+
+		text-align: center;
+		margin-bottom: 25px;
+		border: solid black 2px;
+		padding: 10px;
+		background-color: #0093E9;
+		background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+		border-radius: 5px;
+		width: 100%;
+		height: 50px;
+		line-height: 25px;
+		font-size: large;
+
+
+	}
+
+	
+
+	::placeholder{
+
+	text-transform: none;
+
+	}
+
+		.request {
+			margin-bottom: 20px;
+			padding: 4px;
+			border-radius: 5px;
+			border: 2px solid dodgerblue;
+			outline: none;
+			transition: .3s;
+			text-transform: uppercase;
+			width: 60%;
+			
+
+		}
+	
+		.request:focus{
+
+		border-color: blueviolet;
+		
+
+
+		}
+
+
+
+
+
+
+
+	.span-required{
+
+		font-size: 12px;
+		display: none;
+		color: red;
+		font-weight: bold;
+		
+	}
+
+	#botaoeditar{
+
+		display: none;
+		
+
+
+
+	}
+
+	@media(max-width: 1024px){
+
+		*{
+
+			padding: 0px;
+			margin: 0px;
+			font-family: arial;
+		}
+
+		body{
+			
+			width: 100%;
+			height: 100%;
+
+		}
+		
+
+		#formulario{
+
+			width: 250px;
+			margin-left: 310px;
+			
+			
+		}
+
+	}
+
+	@media(max-width: 1400px){
+
+		*{
+
+			padding: 0px;
+			margin: 0px;
+			font-family: arial;
+		}
+
+		body{
+			
+			width: 100%;
+			height: 100%;
+
+		}
+		
+
+		#formulario{
+
+			width: 420px;
+			
+			
+			
+			
+		}
+
+	}
+
+	#sexo{
+
+		margin-bottom: 20px;
+
+
+	}
+
+
+input::placeholder{
+
+	color: azure;
+}
+
+input{
+
+color: azure;
+
+
+}
+label{
+
+color: azure;
+
+}
+
+
+.row{
+
+
+margin-bottom: 0px;
+
+}
+
+#selectform{
+
+
+	width: 50%;
+	margin-left: 13px;
+
+
+
+}
+
